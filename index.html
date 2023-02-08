@@ -344,6 +344,79 @@
         <category id="catVariables" colour="330" custom="VARIABLE" name="Variables"></category>
         <category id="catFunctions" colour="290" custom="PROCEDURE" name="Functions"></category>
     </xml>
+
+    <xml id="blocklyInit" style="display: none;" translate="no">
+        <block type="variables_set" id="FL]U9*j)pxA6n:VXHi,9">
+            <field name="VAR" id="/J4~s3RXf9/HKLptVC#f">myAge</field>
+            <value name="VALUE">
+                <block type="math_number" id=";Mgplk^}C$NiZLswYISu">
+                    <field name="NUM">4</field>
+                </block>
+            </value>
+            <next>
+                <block type="controls_if" id="lc*NgqM6IWWwtQ7jr1DA">
+                    <value name="IF0">
+                        <block type="logic_compare" id="]GMsi_Ez[fL4M=NyE$``">
+                            <field name="OP">GT</field>
+                            <value name="A">
+                                <block type="variables_get" id="em|~Nr/E`H{gcV;{5-m7">
+                                    <field name="VAR" id="/J4~s3RXf9/HKLptVC#f">myAge</field>
+                                </block>
+                            </value>
+                            <value name="B">
+                                <block type="math_number" id="a0Uj[|!eQ^?={zwP[LF0">
+                                    <field name="NUM">10</field>
+                                </block>
+                            </value>
+                        </block>
+                    </value>
+                    <statement name="DO0">
+                        <block type="text_print" id="YH61g[$Dab}btB:bSwnq">
+                            <value name="TEXT">
+                                <shadow type="text" id="9c%0nY[*Dq[DUN1Bkv,F">
+                                    <field name="TEXT">abc</field>
+                                </shadow>
+                                <block type="text" id="=E3t|DeG249(abDw^bCM">
+                                    <field name="TEXT">You're older than 10!</field>
+                                </block>
+                            </value>
+                        </block>
+                    </statement>
+                    <next>
+                        <block type="controls_if" id="a0N:p[IgarY[qVZLit%l">
+                            <value name="IF0">
+                                <block type="logic_compare" id="yM?$J!l#O,$ZcF0aW4B_">
+                                    <field name="OP">LTE</field>
+                                    <value name="A">
+                                        <block type="variables_get" id="pN7^W1:n/ycQE2wZA399">
+                                            <field name="VAR" id="/J4~s3RXf9/HKLptVC#f">myAge</field>
+                                        </block>
+                                    </value>
+                                    <value name="B">
+                                        <block type="math_number" id="7;$p4WIluT5U]cZ8UOBX">
+                                            <field name="NUM">10</field>
+                                        </block>
+                                    </value>
+                                </block>
+                            </value>
+                            <statement name="DO0">
+                                <block type="text_print" id="zf%?qN}-Qy.UZ_A3IKG.">
+                                    <value name="TEXT">
+                                        <shadow type="text" id="9c%0nY[*Dq[DUN1Bkv,F">
+                                            <field name="TEXT">abc</field>
+                                        </shadow>
+                                        <block type="text" id="]^fvF_T`#Q^p#nnry1Tl">
+                                            <field name="TEXT">You are 10 or younger!</field>
+                                        </block>
+                                    </value>
+                                </block>
+                            </statement>
+                        </block>
+                    </next>
+                </block>
+            </next>
+        </block>
+    </xml>
     <div id="blockly-all">
         <div id="blockly-me"></div>
         <div id="blockly-code">
@@ -352,7 +425,8 @@
                 <div id="blockly-code-control-exec">
                     <svg width="120px" height="120px" version="1.1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-                        xmlns:serif="http://www.serif.com/" style="transform: scale(60%,60%) rotate(180deg); margin-left: 10px;">
+                        xmlns:serif="http://www.serif.com/"
+                        style="transform: scale(60%,60%) rotate(180deg); margin-left: 10px;">
                         <path
                             d="M15.289,67.644c-2.896,-1.447 -4.725,-4.407 -4.725,-7.644c0,-3.237 1.829,-6.197 4.725,-7.644c24.048,-12.024 70.243,-35.122 92.342,-46.172c2.65,-1.324 5.796,-1.183 8.316,0.375c2.519,1.557 4.053,4.308 4.053,7.27l0,92.342c-0,2.962 -1.534,5.713 -4.053,7.27c-2.52,1.558 -5.666,1.699 -8.316,0.375c-22.099,-11.05 -68.294,-34.148 -92.342,-46.172Z"
                             style="fill:#ebebeb;" />

@@ -1,10 +1,13 @@
 import Blockly from 'blockly';
+import { Xml } from 'blockly';
 import { javascriptGenerator } from 'blockly/javascript';
 
 const ws = Blockly.inject('#blockly-me', {
     media: './media',
     toolbox: document.getElementById('toolbox')
 });
+
+Xml.domToWorkspace(document.getElementById('blocklyInit'), ws);
 
 const _onBlockUpdates = () => {
     const codeBlock = document.querySelector('#blockly-all #blockly-code #blockly-code-js code');

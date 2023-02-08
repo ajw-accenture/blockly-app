@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 
 const buildTarget = process.env['BUILD_TARGET'] ?? 'DEV'
-const distDirectory = buildTarget === 'DEV' ? 'dist' : 'build';
+const distDirectory = buildTarget === 'DEV' ? 'dist' : 'docs';
 
 module.exports = {
   mode: "production",
